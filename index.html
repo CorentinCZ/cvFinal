@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corentin Czarnecki</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aecc193d04.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_text.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+			<span class="hamburger"></span>
+		</button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">My Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#knowledge" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#work" class="nav__link">My Work</a>
+                </li>
+                <li class="nav__item">
+                    <a href="img/CORENTINCZARNECKI.pdf" target="_blank" class="nav__link">My Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- #Introduction -->
+    <section class="intro" id="home">
+        <img src="img/logo_perso.png" alt="">
+        <article>
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Corentin Czarnecki</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Junior Web Dev</p>
+        </article>
+    </section>
+
+    <!-- #My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <section class="services__container">
+            <article class="services">
+                <h3>Web Development</h3>
+                <p>I am learning Web Development with JavaScript & PHP and HTML5 & CSS3. (Symfony / JQuery / TypeScript / SASS)</p>
+            </article>
+            <!-- /services-->
+            <article class="services">
+                <h3>Pentesting</h3>
+                <p>I have set an environment to learn Pentesting with VMware & Kali Linux. Actually, I am on the basics of Pentesting. (Python)</p>
+            </article>
+            <!-- /services-->
+            <article class="services">
+                <h3>Game Devlopment</h3>
+                <p>Game Development with Unity. It force me to learn C# and some animation creation.</p>
+            </article>
+            <!-- /services-->
+        </section>
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- #About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about"><span>“Failure is an option here. If things are not failing, you are not innovating enough.”</span> -Elon Musk.</p>
+
+        <article class="about-me__body">
+            <p>I used to be Sound Engineer / Light Designer then I decided to reorient myself as a Web Development.</p>
+            <p>Web Development is my first goal in code and I want to learn more about coding and master more languages like C#, C, C++ and Python. Why ? Because technology is in the middle of our life and we need to evolve at the same speed if we do not
+                want to live in the past.</p>
+        </article>
+        <img src="" alt="">
+    </section>
+
+    <!-- #Knowledges & Skills -->
+    <section class="know-skills" id="knowledge">
+        <h2 class="section__title section__title--skills">Knowledges & Skills</h2>
+        <section class="skills__container">
+            <article class="slist">
+                <h3>Knowledges</h3>
+                <ul class="knowledge__list">
+                    <li class="knowledge__list--item">HTML5 & CSS3</li>
+                    <li class="knowledge__list--item">JavaScript (Jquery / TypeScript)</li>
+                    <li class="knowledge__list--item">PHP</li>
+                    <li class="knowledge__list--item">Symfony</li>
+                    <li class="knowledge__list--item">Bootstrap</li>
+                    <li class="knowledge__list--item">Git</li>
+                    <li class="knowledge__list--item">Python 3</li>
+                    <li class="knowledge__list--item">Linux</li>
+                </ul>
+            </article>
+            <!-- /list-->
+            <article class="slist">
+                <h3>Skills</h3>
+                <ul class="skills__list">
+                    <li class="skills__list--item">Self-educated</li>
+                    <li class="skills__list--item">Teamwork</li>
+                    <li class="skills__list--item">Autonomous</li>
+                    <li class="skills__list--item">Adaptability</li>
+                    <li class="skills__list--item">Geographic Mobility</li>
+                    <li class="skills__list--item">Volunteer</li>
+                </ul>
+            </article>
+            <!-- /list-->
+            <article class="slist">
+                <h3>Languages</h3>
+                <ul class="lang__list">
+                    <li class="lang_list--item">French (Mother tongue)</li>
+                    <li class="lang_list--item">English</li>
+                </ul>
+            </article>
+            <!-- /list-->
+        </section>
+
+    </section>
+
+    <!-- #My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Lorem, ipsum.</h2>
+        <p class="section__subtitle section__subtitle--work">Lorem ipsum dolor sit amet.</p>
+
+        <article class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="" alt="" class="portfolio__img">
+            </a>
+        </article>
+    </section>
+
+    <!-- #Footer -->
+    <footer>
+        <a href="mailto:corentin.rr.czarnecki@gmail.com" class="footer__link">corentin.rr.czarnecki@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/CorentinCZ" target="_blank" class="social-list__link fab fa-github-square fa-5x"></a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/c-czarnecki/" target="_blank" class="social-list__link fab fa-linkedin fa-5x"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

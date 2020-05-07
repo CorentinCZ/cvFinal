@@ -1,0 +1,298 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media (min-width: 800px) {
+     :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+    }
+    .intro article {
+        width: 100%;
+    }
+    .intro img {
+        order: 2;
+    }
+    .services__container {
+        flex-direction: column;
+    }
+    .skills__container {
+        flex-direction: column;
+    }
+    .knowledge__list,
+    .skills__list,
+    .lang__list {
+        align-self: flex-start;
+    }
+}
+
+
+/*Custom properties*/
+
+:root {
+    /*Font*/
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    /*Font weight*/
+    --fw-reg: 300;
+    --fw-bold: 900;
+    /*Color*/
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #ebbb54;
+    /*Font size*/
+    --fs-h1: 3rem;
+    --fs-h2: 2.2rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    /*Box shadow*/
+    --bs: 0px 0px 35px -18px rgba(0, 0, 0, 0.75);
+    --mg-tt: 20px 0px 20px 0px;
+}
+
+
+/*General style*/
+
+body {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1)
+}
+
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h3 {
+    font-size: var(--fs-h3)
+}
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background-color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    padding: .1em .25em;
+}
+
+
+/* Header */
+
+nav,
+.nav-toggle {
+    display: none;
+}
+
+.logo {
+    max-height: 100px;
+    max-width: 300px;
+}
+
+
+/* Intro Section*/
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro article {
+    text-align: right;
+}
+
+.intro img {
+    max-width: 220px;
+    z-index: 2;
+}
+
+.section__subtitle--intro {
+    position: relative;
+    text-align: right;
+    width: calc(100% + 55%);
+    left: -55%;
+}
+
+
+/* Services */
+
+.my-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    padding-bottom: 20px;
+}
+
+.my-services .section__title,
+.services {
+    margin: var(--mg-tt);
+}
+
+.services__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services {
+    max-width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    box-shadow: var(--bs);
+    text-align: justify;
+}
+
+.my-services .btn {
+    display: none;
+}
+
+
+/* About me */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__title--about {
+    margin: var(--mg-tt);
+}
+
+.section__subtitle--about span {
+    font-style: oblique;
+}
+
+.about-me__body {
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+/* My work */
+
+#work {
+    display: none;
+}
+
+
+/* Knowledges & Skills */
+
+.know-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__title--skills {
+    margin: var(--mg-tt);
+}
+
+.skills__container {
+    display: flex;
+}
+
+.slist {
+    max-width: 100%;
+    padding: 20px;
+    margin: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    box-shadow: var(--bs);
+    text-align: justify;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link {
+    color: var(--clr-accent);
+    align-self: center;
+    margin: 10px;
+}
+
+footer ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 10px;
+}
+
+footer li a {
+    filter: hue-rotate(-75deg) contrast(0.7);
+}
