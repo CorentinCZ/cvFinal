@@ -63,6 +63,10 @@
 
 /*General style*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -170,7 +174,7 @@ nav {
 .nav__link {
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     text-decoration: none;
 }
 
@@ -198,11 +202,16 @@ nav {
 }
 
 .nav-open .hamburger {
-    transform: rotate(360deg);
+    transform: rotate(.625turn);
 }
 
 .nav-open .hamburger::before {
     transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger,
+.nav-open .hamburger::before {
+    background: var(--clr-accent);
 }
 
 .nav-open .hamburger::after {
@@ -230,7 +239,6 @@ nav {
     position: absolute;
     left: 0;
     right: 0;
-    background: var(--clr-dark);
 }
 
 .hamburger::before {
